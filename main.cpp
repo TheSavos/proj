@@ -20,8 +20,8 @@ private:
     double chemia;
     double fizyka;
 
-    double szczescie; //to jest do ugadania jak to zrobic takze nic z tym nie ruszalem na razie
-    double zdrowie; //to jest do ugadania jak to zrobic takze nic z tym nie ruszalem na razie
+    double szczescie; 
+    double zdrowie; 
     int sen;
 
     int dzien;              
@@ -85,6 +85,12 @@ public:
                 return true;
             }
 
+            matekatyka = 0.0;
+            fizyka = 0.0;
+            chemia = 0.0;
+            programowanie = 0.0;
+            metale = 0.0;
+
             dniDoSesji = 10;
         }
 
@@ -126,15 +132,15 @@ public:
  
         cout<<"      Poziom opanowania umiejetnosci z przedmiotow:"<<endl<<endl;
  
-        cout<<"                       Matematyka "<<matematyka<<" z 10"; if(matematyka<5.0&&dniDoSesji <5) cout<<"    Musisz chyba nad tym popracowac!";
-        cout<<endl;
         cout<<"          Metale "<<metale<<" z 10"; if(metale<5.0&&dniDoSesji <5) cout<<"    Nie wyglada to najlepiej!";
+        cout<<endl;
+        cout<<"                       Matematyka "<<matematyka<<" z 10"; if(matematyka<5.0&&dniDoSesji <5) cout<<"    Musisz chyba nad tym popracowac!";
         cout<<endl;
         cout<<"                 Programowanie "<<programowanie<<" z 10"; if(programowanie<5.0&&dniDoSesji <5) cout<<"    Hmmmm...";
         cout<<endl;
-        cout<<"                        Chemia "<<chemia<<" z 10"; if(chemia<5.0&&dniDoSesji <5) cout<<"    Wez sie za robote!";
-        cout<<endl;
         cout<<"                        Fizyka "<<fizyka<<" z 10"; if(fizyka<5.0&&dniDoSesji <5) cout<<"  Ty naprawde nie masz az tyle czasu!"<<endl;
+        cout<<endl;
+        cout<<"                        Chemia "<<chemia<<" z 10"; if(chemia<5.0&&dniDoSesji <5) cout<<"    Wez sie za robote!";
     }
 
     void dodajUmiejetnosc(int nr, double n) {
