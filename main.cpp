@@ -553,6 +553,8 @@ int main()
 
         gracz.dodajUmiejetnosc(punkt, 1.0);
     }
+
+    system("cls");
     
 
     //logowanie i jezyki do zrobienia jutro bo to latwe 
@@ -593,10 +595,8 @@ int main()
                     continue;
                 }
             }
-            cout << "xd ";
             w = gracz.getWolnyCzas();
         }
-        cout << "asd ";
         gracz.kolejnyDzien();
     }
 
