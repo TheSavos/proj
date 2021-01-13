@@ -132,7 +132,7 @@ public:
  
         cout<<"      Poziom opanowania umiejetnosci z przedmiotow:"<<endl<<endl;
  
-        cout<<"          Metale "<<metale<<" z 10"; if(metale<5.0&&dniDoSesji <5) cout<<"    Nie wyglada to najlepiej!";
+        cout<<"          Metale " << metale << " z 10"; if(metale < 5.0 && dniDoSesji < 5) cout << "    Nie wyglada to najlepiej!";
         cout<<endl;
         cout<<"                       Matematyka "<<matematyka<<" z 10"; if(matematyka<5.0&&dniDoSesji <5) cout<<"    Musisz chyba nad tym popracowac!";
         cout<<endl;
@@ -569,7 +569,7 @@ int main()
 
     while(gracz.czyGameOver() == false) {
         int w = gracz.getWolnyCzas();
-        int event = rand() % 41;
+        int event = (rand() % 40) + 1;
         if(event < 24) {
             gracz.wydarzenie(event);
         }
